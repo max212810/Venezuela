@@ -13,7 +13,7 @@ export default function App() {
   const fetchTasas = async () => {
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:8000/api/tasas');
+      const res = await fetch('https://venezuela-i906.onrender.com/');
       if (res.ok) {
         const data = await res.json();
         setTasas(data);
